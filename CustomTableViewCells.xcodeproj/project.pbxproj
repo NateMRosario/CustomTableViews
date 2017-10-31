@@ -14,6 +14,9 @@
 		816A63F31FA8BE500040B8CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816A63F11FA8BE500040B8CB /* LaunchScreen.storyboard */; };
 		816A63FE1FA8BE500040B8CB /* CustomTableViewCellsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A63FD1FA8BE500040B8CB /* CustomTableViewCellsTests.swift */; };
 		816A64091FA8BE500040B8CB /* CustomTableViewCellsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A64081FA8BE500040B8CB /* CustomTableViewCellsUITests.swift */; };
+		816A64171FA8C3DD0040B8CB /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A64161FA8C3DD0040B8CB /* Movie.swift */; };
+		816A64191FA8C3F70040B8CB /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A64181FA8C3F70040B8CB /* MovieData.swift */; };
+		816A641C1FA8D87A0040B8CB /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A641B1FA8D87A0040B8CB /* MovieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		816A64041FA8BE500040B8CB /* CustomTableViewCellsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTableViewCellsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		816A64081FA8BE500040B8CB /* CustomTableViewCellsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCellsUITests.swift; sourceTree = "<group>"; };
 		816A640A1FA8BE500040B8CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		816A64161FA8C3DD0040B8CB /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		816A64181FA8C3F70040B8CB /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
+		816A641B1FA8D87A0040B8CB /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,10 @@
 		816A63E71FA8BE500040B8CB /* CustomTableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				816A641A1FA8C41C0040B8CB /* Models */,
 				816A63E81FA8BE500040B8CB /* AppDelegate.swift */,
 				816A63EA1FA8BE500040B8CB /* ViewController.swift */,
+				816A641B1FA8D87A0040B8CB /* MovieTableViewCell.swift */,
 				816A63EC1FA8BE500040B8CB /* Main.storyboard */,
 				816A63EF1FA8BE500040B8CB /* Assets.xcassets */,
 				816A63F11FA8BE500040B8CB /* LaunchScreen.storyboard */,
@@ -123,6 +131,15 @@
 				816A640A1FA8BE500040B8CB /* Info.plist */,
 			);
 			path = CustomTableViewCellsUITests;
+			sourceTree = "<group>";
+		};
+		816A641A1FA8C41C0040B8CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				816A64161FA8C3DD0040B8CB /* Movie.swift */,
+				816A64181FA8C3F70040B8CB /* MovieData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				816A641C1FA8D87A0040B8CB /* MovieTableViewCell.swift in Sources */,
+				816A64191FA8C3F70040B8CB /* MovieData.swift in Sources */,
 				816A63EB1FA8BE500040B8CB /* ViewController.swift in Sources */,
 				816A63E91FA8BE500040B8CB /* AppDelegate.swift in Sources */,
+				816A64171FA8C3DD0040B8CB /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
