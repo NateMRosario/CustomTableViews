@@ -20,32 +20,39 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         myTableView.delegate = self
         myTableView.dataSource = self
         self.myTableView.rowHeight = UITableViewAutomaticDimension
-        self.myTableView.estimatedRowHeight = 200.0
+        self.myTableView.estimatedRowHeight = 200
     }
     func loadData() {
         let allMovies = MovieData.movies
         let sortedMovies = allMovies.sorted{$0.name < $1.name}
         self.movies = sortedMovies
     }
-
     ///Two required Data Source methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Movie Cell", for: indexPath)
-        if let cell = cell as? MovieTableViewCell {
-            let rowToSetUp = indexPath.row
-            let movieToSetUp = movies[rowToSetUp]
-            cell.titleLabel.text = movieToSetUp.name
-            cell.descriptionLabel.text = movieToSetUp.description
-            cell.moviePosterImageView.image = UIImage(named: movieToSetUp.posterImageName)
-            return cell
+        if indexPath.row % 2 == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Movie Cell", for: indexPath)
+            let movieToSetUp = movies[indexPath.row]
+            if let movieCell = cell as? MovieTableViewCell {
+                movieCell.titleLabel.text = movieToSetUp.name
+                movieCell.descriptionLabel.text = movieToSetUp.description
+                movieCell.moviePosterImageView.image = UIImage(named: movieToSetUp.posterImageName)
+                return  movieCell
+            }
         } else {
-            return cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Right Cell", for: indexPath)
+            let movieToSetUp = movies[indexPath.row]
+            if let movieCell = cell as? MovieRightAlignedTableViewCell {
+                movieCell.rightTitle.text = movieToSetUp.name
+                movieCell.rightDescription.text = movieToSetUp.description
+                movieCell.rightImage.image = UIImage(named: movieToSetUp.posterImageName)
+                return movieCell
+            }
         }
+        return UITableViewCell()
     }
-
     @IBAction func sortButtonPressed(_ sender: UIButton) {
         switch sender.tag {
         case 0 :

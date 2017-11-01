@@ -17,6 +17,7 @@
 		816A64171FA8C3DD0040B8CB /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A64161FA8C3DD0040B8CB /* Movie.swift */; };
 		816A64191FA8C3F70040B8CB /* MovieData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A64181FA8C3F70040B8CB /* MovieData.swift */; };
 		816A641C1FA8D87A0040B8CB /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A641B1FA8D87A0040B8CB /* MovieTableViewCell.swift */; };
+		816A64201FA910F10040B8CB /* MovieRightAlignedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816A641F1FA910F10040B8CB /* MovieRightAlignedTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		816A64161FA8C3DD0040B8CB /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		816A64181FA8C3F70040B8CB /* MovieData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieData.swift; sourceTree = "<group>"; };
 		816A641B1FA8D87A0040B8CB /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		816A641F1FA910F10040B8CB /* MovieRightAlignedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRightAlignedTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				816A641A1FA8C41C0040B8CB /* Models */,
 				816A63E81FA8BE500040B8CB /* AppDelegate.swift */,
 				816A63EA1FA8BE500040B8CB /* ViewController.swift */,
+				816A641F1FA910F10040B8CB /* MovieRightAlignedTableViewCell.swift */,
 				816A641B1FA8D87A0040B8CB /* MovieTableViewCell.swift */,
 				816A63EC1FA8BE500040B8CB /* Main.storyboard */,
 				816A63EF1FA8BE500040B8CB /* Assets.xcassets */,
@@ -280,6 +283,7 @@
 				816A64191FA8C3F70040B8CB /* MovieData.swift in Sources */,
 				816A63EB1FA8BE500040B8CB /* ViewController.swift in Sources */,
 				816A63E91FA8BE500040B8CB /* AppDelegate.swift in Sources */,
+				816A64201FA910F10040B8CB /* MovieRightAlignedTableViewCell.swift in Sources */,
 				816A64171FA8C3DD0040B8CB /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
